@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(48, 68, 87);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 250px;
+
+    
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+nav h1 {
+    margin-right: auto;
+    font-size: 1.75rem;
+    height: 10vh;
+    padding-top: 20px;
+    cursor: pointer;
+   
+}
+
+
+nav ul  a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #2ec41a;
+}
+
+
+.line {
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+    
+    
+}
+
+i{
+    color: white;
+    font-size: 50px;
+}
+
+.cs2{
+    margin-top: 70px;
+}
+
+.cs2 .line{
+    background-color: black;
+
+}
+
+.cs2 i{
+    color: black;
+}
+
+.box {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.cs1{
+    background-color:rgb(8, 173, 173);
+    text-align: center;
+    height: 80vh;
+}
+
+.cs1 img{
+    width: 250px;
+    text-align: center;
+}
+
+.cs1 .pp{
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+
+.ppp{
+    font-size: white;
+
+}
+
+.cs2 {
+    text-align: center;
+}
+
+.cs2 p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.portfolio-list li img {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-list li .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(8, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-list li:hover .hover-overlay {
+    opacity: 1;
+}
+
+.portfolio-list li .hover-overlay i {
+    font-size: 5rem;
+    color: white;
+    transition: transform 0.3s ease;
+    transform: scale(0); 
+}
+
+.portfolio-list li:hover .hover-overlay i {
+    transform: scale(1);
+}
+
+ 
+.btn2{
+    background-color: #0d0d0d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.sc3 {
+    background-color:rgb(8, 173, 173);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+
+   
+
+}
+
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.paragraphs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+}
+
+.paragraphs p {
+    flex: 1; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+.sc3 .aa{
+    font-size: 50px;
+} 
+
+.sc3 p {
+    color: white;
+    font-size: 20px;
+    height: 15vh;
+    width: 95%; 
+    flex: 1;
+    margin: 0;
+    margin-bottom: -50px;
+}
+
+.box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+.btn2 {
+    padding-top: 50px;
+    margin-left: 600px;
+    background-color: rgb(8, 173, 173);
+    border: 2px solid white; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+
+.fa-download{
+    font-size: 20px;
+}
+
+
+
+.sc4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 800px;
+    padding: 10px;
+    border: none;
+    outline: none; /* Remove default focus outline */
+    font-size: 1rem;
+    border-bottom: 2px solid #ccc; /* Default bottom border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+textarea {
+    height: 150px;
+}
+
+
+.sc4 .line{
+    background-color: black;
+
+}
+
+.sc4 i{
+    color: black;
+}
+
+.sc4 p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    margin-top: 50px;
+    transition: ease-in-out, margin-top .35s ease-in-out;
+}
+
+
+
+footer{
+    background-color: rgb(48, 68, 87);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    height: 30vh;
+}
+
+.div3 .p3{
+    font-size: 1.5rem;
+    
+}
+
+.p4{
+    margin-top: 50px;
+}
+
+.icon{
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    background-color: rgb(11, 129, 129);
+    border: 2px solid white; /* Apply the border here */
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.icon:hover{
+    background-color: white;
+    color: black;
+}
+
+.p6{
+    padding-top: -50px;
+}
+
+.start{
+    text-decoration: none;
+    color: aqua;
+}
+
+.start:hover{
+    color: #2ec41a;
+}
+
+
+.exit{
+    background-color: rgb(10, 34, 34);
+    width: 100%;
+    height: 10vh;
+}
+
+.exit p{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
